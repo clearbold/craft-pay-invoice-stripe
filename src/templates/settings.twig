@@ -1,0 +1,35 @@
+{% import '_includes/forms' as forms %}
+
+{{ forms.autosuggestField({
+    first:          true,
+    required:       true,
+    label:          'Stripe JavaScript URL',
+    instructions:   '',
+    id:             'stripeJsUrl',
+    name:           'stripeJsUrl',
+    placeholder:    '',
+    value:          settings.stripeJsUrl,
+    suggestEnvVars: true
+}) }}
+
+{{ forms.autosuggestField({
+    required:       true,
+    label:          'Stripe Publishable Key',
+    instructions:   '',
+    id:             'stripePublishableKey',
+    name:           'stripePublishableKey',
+    placeholder:    '',
+    value:          settings.stripePublishableKey,
+    suggestEnvVars: true
+}) }}
+
+{{ forms.autosuggestField({
+    required:       true,
+    label:          'Stripe Private Key',
+    instructions:   '',
+    id:             'stripePrivateKey',
+    name:           'stripePrivateKey',
+    placeholder:    '',
+    value:          settings.stripePrivateKey,
+    suggestEnvVars: true
+}) }}

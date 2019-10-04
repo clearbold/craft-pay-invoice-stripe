@@ -1,0 +1,48 @@
+{
+    "name": "clearbold/craft-pay-invoice-stripe",
+    "description": "Pay Invoice w/ Stripe is a simple plugin used to facilitate one-off payments on clients' websites.",
+    "version": "0.4",
+    "type": "craft-plugin",
+    "homepage": "https://github.com/clearbold/craft-pay-invoice-stripe",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Mark Reeves",
+            "homepage": "http://clearbold.com"
+        }
+    ],
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "twig",
+        "stripe",
+        "payments",
+        "e-commerce"
+    ],
+    "require": {
+        "craftcms/cms": "^3.1.6.1",
+        "stripe/stripe-php": "^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+          "clearbold\\payinvoice\\": "src/"
+        }
+    },
+    "support": {
+        "docs": "https://github.com/clearbold/craft-pay-invoice-stripe",
+        "source": "https://github.com/clearbold/craft-pay-invoice-stripe",
+        "issues": "https://github.com/clearbold/craft-pay-invoice-stripe"
+    },
+    "extra": {
+        "name": "Pay Invoice w/ Stripe",
+        "handle": "payinvoice",
+        "hasCpSettings": true,
+        "developer": "Clearbold",
+        "developerUrl": "http://clearbold.com/",
+        "changelogUrl": "https://raw.githubusercontent.com/clearbold/pay-invoice-stripe/master/CHANGELOG.md",
+        "class": "clearbold\\payinvoice\\PayInvoice"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
