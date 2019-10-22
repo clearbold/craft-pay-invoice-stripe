@@ -7,7 +7,7 @@
 namespace clearbold\payinvoice;
 
 use clearbold\payinvoice\models\Settings;
-// use clearbold\darksky\services\DarkskyService;
+use clearbold\payinvoice\services\PayInvoiceService;
 use clearbold\payinvoice\variables\PayInvoiceVariable;
 
 use Craft;
@@ -36,7 +36,7 @@ class PayInvoice extends Plugin
         self::$plugin = $this;
 
         $this->setComponents([
-            // 'payinvoice' => PayInvoiceService::class,
+            'payinvoice' => PayInvoiceService::class,
         ]);
 
         Event::on(

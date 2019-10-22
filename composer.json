@@ -1,7 +1,7 @@
 {
     "name": "clearbold/craft-pay-invoice-stripe",
     "description": "Pay Invoice w/ Stripe is a simple plugin used to facilitate one-off payments on clients' websites.",
-    "version": "0.4",
+    "version": "0.5.1",
     "type": "craft-plugin",
     "homepage": "https://github.com/clearbold/craft-pay-invoice-stripe",
     "license": "proprietary",

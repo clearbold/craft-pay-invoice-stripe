@@ -39,6 +39,8 @@ class PayInvoiceVariable
     {
         // Look up whether current logged-in user has a verified flag set
         $member = \Craft::$app->getUser()->getIdentity();
+        if (!isset($member))
+            return false;
         try {
             if ( strlen($member->getFieldValue('memberStripeBankAccountLast4')) > 0 )
                 return true;
